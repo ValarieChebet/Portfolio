@@ -1,0 +1,379 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyst Portfolio - Valarie Chebet</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use Inter font and accent color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'accent': '#00ADB5', // A nice teal/cyan color
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom smooth scrolling for navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Name -->
+                <a href="#hero" class="text-2xl font-bold text-accent">
+                    Valarie Chebet
+                </a>
+                <!-- Nav Links -->
+                <div class="flex space-x-4 md:space-x-6 text-sm md:text-base">
+                    <a href="#about" class="text-gray-600 hover:text-accent transition duration-150">About</a>
+                    <a href="#skills" class="text-gray-600 hover:text-accent transition duration-150">Skills</a>
+                    <a href="#projects" class="text-gray-600 hover:text-accent transition duration-150">Projects</a>
+                    <a href="#builder-tool" class="text-gray-600 hover:text-accent transition duration-150">Pitch Tool</a>
+                    <a href="#contact" class="text-gray-600 hover:text-accent transition duration-150">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center bg-white border-b-8 border-accent/20">
+        <div class="text-center p-8 md:p-16 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-gray-900 mb-4 tracking-tight">
+                Hi, I'm <span class="text-accent">Valarie Chebet</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Entry-level Data Scientist and Analyst, passionate about leveraging data and AI to drive innovation and solve real-world logistics challenges.
+            </p>
+            <a href="#projects" class="inline-block px-10 py-3 text-lg font-semibold text-white bg-accent rounded-full shadow-lg hover:bg-teal-600 transition duration-300 transform hover:scale-105">
+                View My Work &rarr;
+            </a>
+        </div>
+    </section>
+
+    <!-- 2. About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">About Me</h2>
+            <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-2xl">
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    I am an entry-level professional with a strong foundation in **Data Science and Analytics** from Jomo Kenyatta University of Agriculture and Technology. My passion lies in translating complex data into clear, actionable business insights. I am curious, collaborative, and thrive in environments where data drives decision-making.
+                </p>
+                <p class="text-lg text-gray-600 leading-relaxed mt-4">
+                    Currently, I work as a Data Analyst, focusing on **operational and logistics optimization**, and have prior experience in data consulting. I specialize in developing performance dashboards, building data models (including CNNs for image classification), and providing timely reports that enhance efficiency and customer satisfaction.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Technical Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+                
+                <!-- Skill Card 1: Programming -->
+                <div class="bg-gray-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-xl font-semibold text-accent mb-3">Programming</h3>
+                    <ul class="list-none space-y-1 text-gray-700 text-base">
+                        <li>**Python**</li>
+                        <li>**R**</li>
+                        <li>**SQL** (Database Mgmt)</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Card 2: AI & Machine Learning -->
+                <div class="bg-gray-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-xl font-semibold text-accent mb-3">AI & Machine Learning</h3>
+                    <ul class="list-none space-y-1 text-gray-700 text-base">
+                        <li>Statistics</li>
+                        <li>**TensorFlow**</li>
+                        <li>CNN Modeling</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Card 3: Visualization & BI -->
+                <div class="bg-gray-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-xl font-semibold text-accent mb-3">Visualization & BI</h3>
+                    <ul class="list-none space-y-1 text-gray-700 text-base">
+                        <li>**Power BI**</li>
+                        <li>Excel / Spreadsheets</li>
+                        <li>Dashboards & Reporting</li>
+                    </ul>
+                </div>
+
+                <!-- Skill Card 4: Soft Skills & Domain -->
+                <div class="bg-gray-100 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-xl font-semibold text-accent mb-3">Soft Skills & Domain</h3>
+                    <ul class="list-none space-y-1 text-gray-700 text-base">
+                        <li>Problem Solving</li>
+                        <li>Teamwork & Comms</li>
+                        <li>Logistics & Operations Data</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Projects Section (The Core of the Portfolio) -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Featured Projects</h2>
+            <p class="text-center text-gray-600 mb-10 max-w-3xl mx-auto">
+                These projects showcase my full analytical lifecycle, from initial data processing to delivering actionable results and models.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+                <!-- Project Card 1: Data Analyst Role at GAS AFRICA -->
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden group hover:shadow-accent/40 transition duration-300">
+                    <div class="p-6">
+                        <span class="text-xs font-semibold uppercase text-accent">Current Role/Logistics Analysis</span>
+                        <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4">Operational Efficiency Tracking</h3>
+                        <p class="text-gray-600 mb-4">
+                            Ongoing work analyzing operational, logistics, and customer data to support delivery optimization, fleet utilization, and enhanced customer satisfaction.
+                        </p>
+                        <ul class="flex flex-wrap gap-2 mb-4">
+                            <li class="text-xs bg-teal-100 text-teal-800 px-3 py-1 rounded-full">Python/SQL</li>
+                            <li class="text-xs bg-teal-100 text-teal-800 px-3 py-1 rounded-full">Dashboards</li>
+                            <li class="text-xs bg-teal-100 text-teal-800 px-3 py-1 rounded-full">Route Performance</li>
+                        </ul>
+                        <a href="[LINK_TO_DASHBOARD_OR_SUMMARY]" class="text-accent font-semibold flex items-center hover:text-teal-600 transition duration-150">
+                            View Project Details
+                            <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: Undergraduate Final Project (NEW CONTENT) -->
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden group hover:shadow-accent/40 transition duration-300">
+                    <div class="p-6">
+                        <span class="text-xs font-semibold uppercase text-accent">Time Series & Deep Learning</span>
+                        <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4">Kenya Debt Forecasting & Sustainability</h3>
+                        <p class="text-gray-600 mb-4">
+                            Developed and compared **ARIMA** and **LSTM** models to forecast Kenya’s public debt trends (1999–2021). LSTM achieved superior accuracy (28.4% lower MSE) by capturing complex, non-linear dependencies, providing crucial policy insights.
+                        </p>
+                        <ul class="flex flex-wrap gap-2 mb-4">
+                            <li class="text-xs bg-teal-100 text-teal-800 px-3 py-1 rounded-full">ARIMA (0,2,1)</li>
+                            <li class="text-xs bg-teal-100 text-teal-800 px-3 py-1 rounded-full">LSTM/TensorFlow</li>
+                            <li class="text-xs bg-teal-100 text-teal-800 px-3 py-1 rounded-full">Time Series Analysis</li>
+                        </ul>
+                        <a href="[LINK_TO_FULL_THESIS_OR_REPORT]" class="text-accent font-semibold flex items-center hover:text-teal-600 transition duration-150">
+                            View Full Research Report
+                            <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3: CubeSat Hackathon (Moved from Project 2) -->
+                <div class="bg-white rounded-xl shadow-2xl overflow-hidden group hover:shadow-accent/40 transition duration-300">
+                    <div class="p-6">
+                        <span class="text-xs font-semibold uppercase text-accent">AI & Image Classification</span>
+                        <h3 class="text-2xl font-bold text-gray-900 mt-2 mb-4">Low-Resource Satellite Image Classifier</h3>
+                        <p class="text-gray-600 mb-4">
+                            Developed and optimized a **Convolutional Neural Network (CNN)** model for fast satellite image classification (Blurry, Corrupt, Missing Data), designed for low-resource CubeSat missions.
+                        </p>
+                        <ul class="flex flex-wrap gap-2 mb-4">
+                            <li class="text-xs bg-teal-100 text-teal-800 px-3 py-1 rounded-full">Python</li>
+                            <li class="text-xs bg-teal-100 text-teal-800 px-3 py-1 rounded-full">TensorFlow</li>
+                            <li class="text-xs bg-teal-100 text-teal-800 px-3 py-1 rounded-full">CNN/ML</li>
+                        </ul>
+                        <a href="[LINK_TO_CODE_AND_FINDINGS]" class="text-accent font-semibold flex items-center hover:text-teal-600 transition duration-150">
+                            View Code & Findings
+                            <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Portfolio Builder Tool Section (Gemini API Feature) -->
+    <section id="builder-tool" class="py-20 bg-accent/10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-6">✨ Project Pitch Generator</h2>
+            <p class="text-center text-gray-600 mb-10">
+                Paste a long, detailed technical summary of a project below. I'll use the Gemini model to instantly convert it into a concise, high-impact elevator pitch perfect for your portfolio card.
+            </p>
+
+            <div class="bg-white p-8 rounded-xl shadow-2xl">
+                <label for="project-input" class="block text-lg font-semibold text-gray-800 mb-2">Detailed Project Summary:</label>
+                <textarea id="project-input" rows="8" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-accent focus:border-accent resize-none mb-4" placeholder="E.g., 'This project involved collecting 1.5 million rows of clickstream data, using Python to handle outliers via IQR, then running a Random Forest classifier to predict user conversion probability...'"></textarea>
+                
+                <button id="generate-pitch-btn" class="w-full px-6 py-3 text-lg font-bold text-white bg-accent rounded-lg shadow-lg hover:bg-teal-600 transition duration-300 transform hover:scale-[1.01]">
+                    ✨ Generate Portfolio Pitch
+                </button>
+                
+                <div id="loading-spinner" class="hidden text-center mt-4 text-accent font-medium">
+                    <svg class="animate-spin h-5 w-5 text-accent inline-block mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    Generating pitch...
+                </div>
+
+                <div id="output-area" class="mt-8 pt-4 border-t border-gray-200 hidden">
+                    <label class="block text-lg font-semibold text-gray-800 mb-2">Generated Pitch:</label>
+                    <div id="generated-pitch" class="bg-teal-50 p-4 rounded-lg border border-teal-200 text-gray-700 text-base whitespace-pre-wrap">
+                        <!-- Pitch will be inserted here -->
+                    </div>
+                </div>
+                <p id="error-message" class="text-red-500 mt-4 hidden">An error occurred while generating the pitch. Please try again.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Contact Section -->
+    <section id="contact" class="py-20 bg-white border-t border-gray-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-6">Let's Connect</h2>
+            <p class="text-xl text-gray-600 mb-8">
+                I am actively seeking new analytical challenges and opportunities. Feel free to reach out!
+            </p>
+            
+            <a href="mailto:valariechebett@gmail.com" class="inline-block text-2xl font-bold text-accent hover:text-teal-600 transition duration-300">
+                valariechebett@gmail.com
+            </a>
+
+            <!-- Social Links -->
+            <div class="flex justify-center space-x-6 mt-10">
+                <a href="[YOUR_LINKEDIN_URL]" target="_blank" class="text-gray-500 hover:text-accent transition duration-300 transform hover:scale-110" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.567-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="[YOUR_GITHUB_URL]" target="_blank" class="text-gray-500 hover:text-accent transition duration-300 transform hover:scale-110" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.084-.742.083-.727.083-.727 1.205.084 1.839 1.237 1.839 1.237 1.07 1.833 2.807 1.304 3.492.997.107-.775.418-1.304.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.292-1.552 3.3-1.23 3.3-1.23.653 1.652.242 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.2-6.096 8.2-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>&copy; <span id="year"></span> Valarie Chebet | Data Analyst Portfolio.</p>
+            <p class="mt-1 text-gray-400">Built with HTML and Tailwind CSS.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in the footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // --- GEMINI API INTEGRATION SETUP ---
+
+        const apiKey = ""; 
+        const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent";
+        
+        const projectInput = document.getElementById('project-input');
+        const generateButton = document.getElementById('generate-pitch-btn');
+        const loadingSpinner = document.getElementById('loading-spinner');
+        const outputArea = document.getElementById('output-area');
+        const generatedPitch = document.getElementById('generated-pitch');
+        const errorMessage = document.getElementById('error-message');
+
+        /**
+         * Generic function to fetch from the Gemini API with retry logic (exponential backoff).
+         * @param {object} payload - The API request body.
+         * @param {number} retries - Current retry attempt count.
+         */
+        async function fetchWithRetry(payload, retries = 0) {
+            try {
+                const response = await fetch(`${API_URL}?key=${apiKey}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    const errorBody = await response.json();
+                    if (retries < 3 && (response.status === 429 || response.status >= 500)) {
+                        // Retry on rate limit (429) or server errors (5xx)
+                        const delay = Math.pow(2, retries) * 1000 + Math.random() * 1000;
+                        await new Promise(resolve => setTimeout(resolve, delay));
+                        return fetchWithRetry(payload, retries + 1);
+                    }
+                    throw new Error(`API error: ${response.status} - ${errorBody.error?.message || response.statusText}`);
+                }
+                
+                return await response.json();
+
+            } catch (error) {
+                // Console logging but not breaking the UI
+                console.error("Fetch failed after all retries:", error);
+                throw new Error("Failed to communicate with the AI service.");
+            }
+        }
+
+        async function generateProjectPitch(detailedSummary) {
+            const systemPrompt = "You are a professional marketing copywriter for a top-tier data analyst portfolio. Your task is to take a detailed technical summary of a project and convert it into a single, punchy, 2-3 sentence, high-impact elevator pitch suitable for a project card. Focus on the **business problem solved**, the **key technical method used**, and the **quantifiable outcome/impact**. Do not use lists or bullet points. Start directly with the pitch.";
+            
+            const userQuery = `Detailed Technical Summary:\n\n${detailedSummary}`;
+            
+            const payload = {
+                contents: [{ parts: [{ text: userQuery }] }],
+                systemInstruction: { parts: [{ text: systemPrompt }] },
+            };
+
+            return fetchWithRetry(payload);
+        }
+
+        async function handleGeneratePitch() {
+            const detailedSummary = projectInput.value.trim();
+
+            if (!detailedSummary) {
+                generatedPitch.textContent = "Please enter a detailed project summary to generate a pitch.";
+                outputArea.classList.remove('hidden');
+                return;
+            }
+
+            // UI state management
+            generateButton.disabled = true;
+            loadingSpinner.classList.remove('hidden');
+            outputArea.classList.add('hidden');
+            errorMessage.classList.add('hidden');
+            generatedPitch.textContent = '';
+
+
+            try {
+                const result = await generateProjectPitch(detailedSummary);
+                const text = result?.candidates?.[0]?.content?.parts?.[0]?.text;
+
+                if (text) {
+                    generatedPitch.textContent = text;
+                    outputArea.classList.remove('hidden');
+                } else {
+                    errorMessage.textContent = "The AI returned an empty response. Please try a different input.";
+                    errorMessage.classList.remove('hidden');
+                }
+            } catch (error) {
+                console.error(error);
+                errorMessage.textContent = error.message;
+                errorMessage.classList.remove('hidden');
+            } finally {
+                generateButton.disabled = false;
+                loadingSpinner.classList.add('hidden');
+            }
+        }
+
+        // Attach event listener
+        generateButton.addEventListener('click', handleGeneratePitch);
+    </script>
+</body>
+</html>
